@@ -2,3 +2,7 @@
 /Intermediate
 /Saved
 *.db
+*.pdb
+*.ipch
+*.db-wal
+*.db-shm
