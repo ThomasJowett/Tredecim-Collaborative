@@ -66,20 +66,6 @@ bool AWP_BaseWeapon::CheckHurtActors(AActor* HurtActor)
 	return true;
 }
 
-void AWP_BaseWeapon::BeginHeavyAttack(UAnimInstance * AnimInstance)
-{
-	AnimInstance->Montage_Play(HeavyMontage, 1.0f, EMontagePlayReturnType::MontageLength, 0.0f, true);
-
-	bLightAttack = false;
-}
-
-void AWP_BaseWeapon::BeginLightAttack(UAnimInstance * AnimInstance)
-{
-	AnimInstance->Montage_Play(LightMontage, 1.0f, EMontagePlayReturnType::MontageLength, 0.0f, true);
-
-	bLightAttack = true;
-}
-
 void AWP_BaseWeapon::BeginSwing()
 {
 

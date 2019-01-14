@@ -57,13 +57,6 @@ public:
 	UPROPERTY(EditAnywhere, Category = Trace)
 		FName SocketEndName;
 
-	/*Begin the attacks*/
-	UFUNCTION(BlueprintCallable, Category = Weapon)
-		void BeginHeavyAttack(UAnimInstance * AnimInstance);
-
-	UFUNCTION(BlueprintCallable, Category = Weapon)
-		void BeginLightAttack(UAnimInstance * AnimInstance);
-
 	/*Starts the tracing process*/
 	UFUNCTION(BlueprintCallable, Category = Weapon)
 		void BeginSwing();
@@ -121,10 +114,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
 		float HeavyDamage = 40;
 
-	/*Montages to play on attack*/
+	/*Is this a Two Handed Weapon*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
-		UAnimMontage * HeavyMontage;
+		bool bIsTwoHanded = false;
 
+	/*Is this a Ranged Weapon*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
-		UAnimMontage * LightMontage;
+		bool bIsRanged = false;
 };
