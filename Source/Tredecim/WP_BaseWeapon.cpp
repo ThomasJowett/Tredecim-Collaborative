@@ -141,7 +141,7 @@ void AWP_BaseWeapon::Tick(float DeltaSeconds)
 
 			if (bDrawTraces)
 			{
-				DrawDebugLine(Instigator->GetWorld(), TraceStart, TraceEnd, FColor::Red, false, 5, 0, 2.0);
+				DrawDebugLine(Instigator->GetWorld(), TraceStart, TraceEnd, FColor::Red, false, DrawTime, 0, 2.0);
 			}
 
 			/* Loop trough all of the pawns in the world*/
@@ -164,8 +164,7 @@ void AWP_BaseWeapon::Tick(float DeltaSeconds)
 							/* if we havent hit the pawn on this swing, then do so*/
 							if (HitData.GetActor() != WeaponOwner && HitData.GetActor() == Pawn && CheckHurtEnemies(Pawn) == true)
 							{
-								/*You can implement your damage dealing here or whatever else you want to happen
-								When the weapon has hit the character*/
+								/*Deal damage to the actor hit and call the on hit function*/
 								if (HitData.GetActor() != this->WeaponOwner)
 								{
 									HitData.GetActor()->TakeDamage(bLightAttack ? LightDamage : HeavyDamage, FDamageEvent(), WeaponOwner->GetInstigatorController(), this);

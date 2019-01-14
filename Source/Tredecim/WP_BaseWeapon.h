@@ -89,6 +89,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Debug)
 		bool bDrawTraces;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Debug)
+		float DrawTime = 1.0f;
+
 	/*Holds the mesh of the weapon*/
 	UPROPERTY(EditAnywhere, Category = Weapon)
 		USkeletalMeshComponent* Mesh;

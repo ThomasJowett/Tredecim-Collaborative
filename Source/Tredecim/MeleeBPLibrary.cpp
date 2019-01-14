@@ -21,7 +21,7 @@ bool UMeleeBPLibrary::MeleeTrace(ACharacter* Instigator, float Distance, FVector
 
 	if (bDrawTrace)
 	{
-		DrawDebugLine(Instigator->GetWorld(), StartLoc, EndLoc, FColor::Red, false, 3, 0, 1.0);
+		DrawDebugLine(Instigator->GetWorld(), StartLoc, EndLoc, FColor::Red, false, 1, 0, 1.0);
 	}
 
 
