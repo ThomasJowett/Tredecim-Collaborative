@@ -16,11 +16,11 @@
 	},
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Tredecim-8871.dll",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Tredecim-4558.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Tredecim-8871.pdb",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Tredecim-4558.pdb",
 			"Type": "SymbolFile"
 		},
 		{

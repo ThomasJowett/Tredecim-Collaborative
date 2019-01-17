@@ -121,6 +121,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
 		bool bIsTwoHanded = false;
 
+	/*Is Right Handed Weapon*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
+		bool bIsMainHand = true;
+
 	/*Is this a Ranged Weapon*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
 		bool bIsRanged = false;
