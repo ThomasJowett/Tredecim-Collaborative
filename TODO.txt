@@ -1,0 +1,4 @@
+-Reset Camera to facing forward if there is no target
+
+-inventory item hud widget that cycles with an animation
+
