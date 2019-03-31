@@ -2,3 +2,8 @@
 
 -inventory item hud widget that cycles with an animation
 
+-When you take damage the amount of damage taken stays on the health bar for a certain amount of time but shows as white
+
+-drop weapons on death
+
+
