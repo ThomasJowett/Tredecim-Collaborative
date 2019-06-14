@@ -21,10 +21,6 @@
 		{
 			"Name": "SteamVR",
 			"Enabled": false
-		},
-		{
-			"Name": "HoudiniEngine",
-			"Enabled": true
 		}
 	]
 }
